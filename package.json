@@ -1,0 +1,15 @@
+{
+  "name": "ext-glance",
+  "version": "1.0.0",
+  "author": "yukmar <marita.andini@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "prebuild": "rm -rf dist .parcel-cache",
+    "build": "parcel build src/manifest.json --no-content-hash --no-source-maps --no-cache --detailed-report 0"
+  },
+  "devDependencies": {
+    "@parcel/config-webextension": "^2.0.0-beta.3.1",
+    "parcel": "^2.0.0-beta.3.1",
+    "webextension-polyfill": "^0.8.0"
+  }
+}
